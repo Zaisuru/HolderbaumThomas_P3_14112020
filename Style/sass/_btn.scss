@@ -1,0 +1,11 @@
+// Déclaration du scc pour les btn de Découverte et de commandes
+
+.btn{
+  color: white;
+  background-color: $secondaryColor;
+  font-size: 15px;
+  border: none;
+  padding: 15px;
+  width: 50%;
+  @include border-radius(20px);
+}

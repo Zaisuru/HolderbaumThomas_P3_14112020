@@ -1,0 +1,18 @@
+//Scss pour la déclaration des mixin
+
+
+@mixin googleFonts($fonts){
+  @import url('https://fonts.googleapis.com/css2?family=#[$fonts]');
+}
+
+@mixin border-radius($degres){
+  -moz-border-radius: $degres;
+  -webkit-border-radius: $degres;
+  border-radius: $degres;
+}
+
+@mixin box-shadow($param){
+  -moz-box-shadow: $param;
+  -webkit-box-shadow: ($param);
+  box-shadow: $param;
+}

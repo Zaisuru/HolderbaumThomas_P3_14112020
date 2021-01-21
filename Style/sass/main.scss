@@ -1,0 +1,89 @@
+// Déclaration des pages
+@import "header";
+@import "variables";
+@import "mixin";
+@import "btn";
+@import "menu";
+@import "footer";
+
+// Fonts
+@include googleFonts(Roboto);
+@include googleFonts(Shrikhand);
+
+// Partie fonctionnement
+
+#Fonctionnement{
+  margin: 0 15px 0 15px;
+  font-family: "Shrikhand", sans-serif;
+  .Cartouche{
+    display: flex;
+    align-items: center;
+    background-color: $fontColor;
+    margin: 35px 15px 35px 15px;
+    padding: 8px;
+    @include border-radius(15px);
+    @include box-shadow(10px 10px 10px 0 $shadowColor);
+    .Cartouche-Number{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primaryColor;
+      width: 35px;
+      height: 35px;
+      color: white;
+      margin: -1px -1px -1px -20px;
+      text-align: center;
+      @include border-radius(50%)
+    }
+    .Cartouche-Select{
+      display: flex;
+      margin-left: 15px;
+      align-items: center;
+      font-weight: bold;
+      .cartouche-I{
+        margin-right: 15px;
+      }
+
+    }
+  }
+}
+
+
+
+
+// Partie page de menu
+
+#MenuRestaurant{
+  margin: 0;
+  #MenuRestaurant-Img{
+    width: 50%;
+  }
+  #MenuRestaurant-Body{
+    @include border-radius(15px 15px 0 0 );
+    background-color: $fontColor;
+    #TitleRestaurant{
+      display: flex;
+      font-family: "Roboto", sans-serif;
+      padding: 15px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cartoucheMenu{
+      border: 1px solid black;
+      @include border-radius(15px 15px 15px 15px);
+      margin: 5px 5px 5px 5px;
+      display: flex;
+      .ChoixMenu{
+        width: 100%;
+        h3,p{
+          margin: 0;
+        }
+        p{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

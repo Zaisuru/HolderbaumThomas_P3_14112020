@@ -1,0 +1,49 @@
+// Scss header
+@import "variables";
+
+#top-header{
+  display: flex;
+}
+#arrowBack{
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#logo{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    padding: 15px;
+    width: 50%;
+  }
+}
+#ville{
+  background-color: $cityColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid black;
+  #ville-description{
+    margin-left: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+#Banner{
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: $fontColor;
+  font-family: "Roboto", sans-serif;
+  h1,p,.btn{
+    margin: 15px 15px 15px 15px;
+  }
+}

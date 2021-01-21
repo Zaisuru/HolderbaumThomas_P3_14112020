@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=#[$fonts]");
+@import url("https://fonts.googleapis.com/css2?family=#[$fonts]");
+#top-header {
+  display: flex;
+}
+
+#arrowBack {
+  display: flex;
+  align-items: center;
+}
+#arrowBack a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo img {
+  padding: 15px;
+  width: 50%;
+}
+
+#ville {
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid black;
+}
+#ville #ville-description {
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+#Banner {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: #f3f3f3;
+  font-family: "Roboto", sans-serif;
+}
+#Banner h1, #Banner p, #Banner .btn {
+  margin: 15px 15px 15px 15px;
+}
+
+.btn {
+  color: white;
+  background-color: #FF79DA;
+  font-size: 15px;
+  border: none;
+  padding: 15px;
+  width: 50%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#Menu {
+  background-color: #f3f3f3;
+  width: 100%;
+  margin: 0;
+}
+#Menu .Restaurant {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+}
+#Menu .Restaurant img {
+  width: 100%;
+  position: relative;
+}
+#Menu .Restaurant .RestaurantCard-Body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Menu .Restaurant .RestaurantCard-Body .RestaurantCard-Body-Titre {
+  margin: 0;
+  padding: 10px;
+}
+#Menu .Restaurant .RestaurantCard-Body .RestaurantCard-Body-Titre h3, #Menu .Restaurant .RestaurantCard-Body .RestaurantCard-Body-Titre p {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #575555;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+footer img {
+  width: 30%;
+}
+footer ol {
+  margin: 0;
+}
+footer ol li {
+  list-style: none;
+  padding: 3px;
+}
+
+#Fonctionnement {
+  margin: 0 15px 0 15px;
+  font-family: "Shrikhand", sans-serif;
+}
+#Fonctionnement .Cartouche {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin: 35px 15px 35px 15px;
+  padding: 8px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  box-shadow: 10px 10px 10px 0 #dfdfdf;
+}
+#Fonctionnement .Cartouche .Cartouche-Number {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  width: 35px;
+  height: 35px;
+  color: white;
+  margin: -1px -1px -1px -20px;
+  text-align: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#Fonctionnement .Cartouche .Cartouche-Select {
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  font-weight: bold;
+}
+#Fonctionnement .Cartouche .Cartouche-Select .cartouche-I {
+  margin-right: 15px;
+}
+
+#MenuRestaurant {
+  margin: 0;
+}
+#MenuRestaurant #MenuRestaurant-Img {
+  width: 50%;
+}
+#MenuRestaurant #MenuRestaurant-Body {
+  -moz-border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0 0;
+  background-color: #f3f3f3;
+}
+#MenuRestaurant #MenuRestaurant-Body #TitleRestaurant {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu {
+  border: 1px solid black;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  margin: 5px 5px 5px 5px;
+  display: flex;
+}
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu {
+  width: 100%;
+}
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu h3, #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
+  margin: 0;
+}
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+//Scss pour les du menu en index
+
+#Menu{
+  background-color: $fontColor;
+  width: 100%;
+  margin: 0;
+  .Restaurant{
+    @include border-radius(15px);
+    background-color: white;
+    overflow: hidden;
+      img{
+        width: 100%;
+        position: relative;
+    }
+    .RestaurantCard-Body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .RestaurantCard-Body-Titre{
+        margin: 0;
+        padding: 10px;
+        h3,p{
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
