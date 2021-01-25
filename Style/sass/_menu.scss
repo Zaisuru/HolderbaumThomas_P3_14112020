@@ -1,4 +1,5 @@
 //Scss pour les du menu en index
+@import "variables";
 
 #Menu{
   background-color: $fontColor;
@@ -8,6 +9,7 @@
     @include border-radius(15px);
     background-color: white;
     overflow: hidden;
+    @include box-shadow(10px 10px 10px 0 $shadowColor);
       img{
         width: 100%;
         position: relative;

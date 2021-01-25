@@ -1,6 +1,6 @@
 // Déclaration des pages
-@import "header";
 @import "variables";
+@import "header";
 @import "mixin";
 @import "btn";
 @import "menu";
@@ -9,6 +9,8 @@
 // Fonts
 @include googleFonts(Roboto);
 @include googleFonts(Shrikhand);
+
+// Partie général
 
 // Partie fonctionnement
 
@@ -23,28 +25,33 @@
     padding: 8px;
     @include border-radius(15px);
     @include box-shadow(10px 10px 10px 0 $shadowColor);
+    &:hover{
+      background-color: lighten($primaryColor, 35%);
+      .cartouche-I{
+        color: $primaryColor;
+      }
+    }
     .Cartouche-Number{
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $primaryColor;
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       color: white;
       margin: -1px -1px -1px -20px;
       text-align: center;
-      @include border-radius(50%)
+      @include border-radius(50%);
     }
     .Cartouche-Select{
       display: flex;
-      margin-left: 15px;
+      margin-left: 25px;
       align-items: center;
       font-weight: bold;
       .cartouche-I{
-        margin-right: 15px;
+        margin-right: 25px;
       }
-
     }
   }
 }

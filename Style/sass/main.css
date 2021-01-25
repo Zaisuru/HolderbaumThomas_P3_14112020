@@ -72,6 +72,9 @@
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
+  -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  box-shadow: 10px 10px 10px 0 #dfdfdf;
 }
 #Menu .Restaurant img {
   width: 100%;
@@ -129,14 +132,20 @@ footer ol li {
   -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
   box-shadow: 10px 10px 10px 0 #dfdfdf;
 }
+#Fonctionnement .Cartouche:hover {
+  background-color: #f2eafb;
+}
+#Fonctionnement .Cartouche:hover .cartouche-I {
+  color: #9356DC;
+}
 #Fonctionnement .Cartouche .Cartouche-Number {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #9356DC;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   color: white;
   margin: -1px -1px -1px -20px;
   text-align: center;
@@ -146,12 +155,12 @@ footer ol li {
 }
 #Fonctionnement .Cartouche .Cartouche-Select {
   display: flex;
-  margin-left: 15px;
+  margin-left: 25px;
   align-items: center;
   font-weight: bold;
 }
 #Fonctionnement .Cartouche .Cartouche-Select .cartouche-I {
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 #MenuRestaurant {
