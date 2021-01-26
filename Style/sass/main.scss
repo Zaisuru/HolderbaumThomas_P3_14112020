@@ -6,16 +6,20 @@
 @import "menu";
 @import "footer";
 
+@import "menuPage";
+
 // Fonts
 @include googleFonts(Roboto);
 @include googleFonts(Shrikhand);
 
 // Partie général
-
+html, body{
+  margin: 0;
+  padding: 0;
+}
 // Partie fonctionnement
 
 #Fonctionnement{
-  margin: 0 15px 0 15px;
   font-family: "Shrikhand", sans-serif;
   .Cartouche{
     display: flex;
@@ -58,39 +62,16 @@
 
 
 
-
-// Partie page de menu
-
-#MenuRestaurant{
-  margin: 0;
-  #MenuRestaurant-Img{
-    width: 50%;
+// Partie Destkop
+@media screen and (min-width:1280px) {
+  #container{
+    max-width: 1500px;
   }
-  #MenuRestaurant-Body{
-    @include border-radius(15px 15px 0 0 );
-    background-color: $fontColor;
-    #TitleRestaurant{
-      display: flex;
-      font-family: "Roboto", sans-serif;
-      padding: 15px;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .cartoucheMenu{
-      border: 1px solid black;
-      @include border-radius(15px 15px 15px 15px);
-      margin: 5px 5px 5px 5px;
-      display: flex;
-      .ChoixMenu{
-        width: 100%;
-        h3,p{
-          margin: 0;
-        }
-        p{
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-    }
+  #Nav{
+    display: flex;
+    justify-content: space-around;
+  }
+  #listRestaurant{
+    display: flex;
   }
 }

@@ -2,13 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Style/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Oh My Food</title>
 </head>
 <body>
-<div id="LoadinSpinner">
+
+<div id="LoadingSpinner">
 </div>
+
 <div id="container">
     <header>
       <!-- Partie Header -->
@@ -24,8 +27,6 @@
             <p>Découvrez des restaurants d'exception séléctionnés par nos soins</p>
             <button class="btn">Explorer nos restaurants</button>
         </div>
-
-
 
         <!-- Cartouche pour le menu -->
         <div id="Fonctionnement">
@@ -57,16 +58,15 @@
             </div>
         </div>
     </header>
-    <main>
 
+    <main>
       <!-- Partie Restaurant -->
         <section id="Menu">
             <h2>Restaurants</h2>
-            <article>
+            <article id="listRestaurant">
                 <figure class="Restaurant">
                     <a href="MenuPage/PaletteGout.html"><img src="Pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du Goût"/></a>
                     <figcaption class="RestaurantCard">
-                        <div class="RestaurantCard-Body">
                             <div class="RestaurantCard-Body-Titre">
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
@@ -75,14 +75,12 @@
                                 <i class="far fa-heart fa-heart-unlike"></i>
                                 <i class="far fa-heart fa-heart-like"></i>
                             </div>
-                        </div>
                     </figcaption>
                 </figure>
 
                 <figure class="Restaurant">
                     <a href="MenuPage/NoteEnch.html"><img src="Pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/></a>
                     <figcaption class="RestaurantCard">
-                        <div class="RestaurantCard-Body">
                             <div class="RestaurantCard-Body-Titre">
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
@@ -91,14 +89,12 @@
                                 <i class="far fa-heart fa-heart-unlike"></i>
                                 <i class="far fa-heart fa-heart-like"></i>
                             </div>
-                        </div>
                     </figcaption>
                 </figure>
 
                 <figure class="Restaurant">
                     <a href="MenuPage/Alafranc.html"><img src="Pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A La française"/></a>
                     <figcaption class="RestaurantCard">
-                        <div class="RestaurantCard-Body">
                             <div class="RestaurantCard-Body-Titre">
                                 <h3>A la française</h3>
                                 <p>Folie-Mericourt</p>
@@ -107,14 +103,12 @@
                                 <i class="far fa-heart fa-heart-unlike"></i>
                                 <i class="far fa-heart fa-heart-like"></i>
                             </div>
-                        </div>
                     </figcaption>
                 </figure>
 
                 <figure class="Restaurant">
                     <a href="MenuPage/DeliceSens.html"><img src="Pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Délice des sens"/></a>
                     <figcaption class="RestaurantCard">
-                        <div class="RestaurantCard-Body">
                             <div class="RestaurantCard-Body-Titre">
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Mericourt</p>
@@ -123,7 +117,6 @@
                                 <i class="far fa-heart fa-heart-unlike"></i>
                                 <i class="far fa-heart fa-heart-like"></i>
                             </div>
-                        </div>
                     </figcaption>
                 </figure>
             </article>
@@ -132,9 +125,7 @@
     </main>
     <footer>
       <!-- Partie Footer -->
-        <figure id="FooterLogo">
-            <img src="Pictures/logo/ohmyfood.png" alt="Logo Oh My Food"/>
-        </figure>
+        <h4 id="footerLogo">Ohmyfood</h4>
         <ol>
             <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
             <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>

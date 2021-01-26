@@ -16,3 +16,10 @@
   -webkit-box-shadow: ($param);
   box-shadow: $param;
 }
+
+@mixin fadein($time){
+  animation: $time;
+  -moz-animation: $time;
+  -webkit-animation: $time;
+  -o-animation: $time;
+}

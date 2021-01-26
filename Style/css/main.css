@@ -7,6 +7,7 @@
 #arrowBack {
   display: flex;
   align-items: center;
+  margin-left: 15px;
 }
 
 #arrowBack a {
@@ -24,15 +25,17 @@
 
 #logo img {
   padding: 15px;
-  width: 50%;
+  width: 40%;
 }
 
 #ville {
-  background-color: #d2d2d2;
+  background-color: #e2e1e1;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 3px solid black;
+  border-top: 3px solid #c2bdbd;
+  width: 100%;
+  margin: 0;
 }
 
 #ville #ville-description {
@@ -55,20 +58,29 @@
 
 .btn {
   color: white;
-  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
   font-size: 15px;
+  width: 60%;
+  padding: 18px;
   border: none;
-  padding: 15px;
-  width: 50%;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
 
+#commande-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 #Menu {
   background-color: #f3f3f3;
   width: 100%;
-  margin: 0;
 }
 
 #Menu .Restaurant {
@@ -77,6 +89,7 @@
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
+  height: 250px;
   -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
   -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
   box-shadow: 10px 10px 10px 0 #dfdfdf;
@@ -84,38 +97,43 @@
 
 #Menu .Restaurant img {
   width: 100%;
-  position: relative;
+  object-fit: cover;
 }
 
-#Menu .Restaurant .RestaurantCard-Body {
+#Menu .Restaurant .RestaurantCard {
   margin: 0;
   padding: 0;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-#Menu .Restaurant .RestaurantCard-Body .RestaurantCard-Body-Titre {
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre {
   margin: 0;
   padding: 10px;
 }
 
-#Menu .Restaurant .RestaurantCard-Body .RestaurantCard-Body-Titre h3, #Menu .Restaurant .RestaurantCard-Body .RestaurantCard-Body-Titre p {
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre h3, #Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre p {
   margin: 0;
   padding: 0;
 }
 
 footer {
   background-color: #575555;
+  font-family: "Roboto", sans-serif;
   color: white;
   margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 
-footer img {
-  width: 30%;
+footer #footerLogo {
+  font-family: "Shrikhand", sans-serif;
+  margin: 10px 10px 10px 40px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 footer ol {
@@ -127,8 +145,130 @@ footer ol li {
   padding: 3px;
 }
 
+footer ol li i {
+  width: 20px;
+  margin-right: 5px;
+}
+
+#MenuRestaurant {
+  margin: 0 0 15px 0;
+}
+
+#MenuRestaurant #MenuRestaurant-Img {
+  margin: 0;
+}
+
+#MenuRestaurant #MenuRestaurant-Img img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#MenuRestaurant #MenuRestaurant-Body {
+  -moz-border-radius: 25px 25px 0 0;
+  -webkit-border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px 0 0;
+  background-color: #f3f3f3;
+  position: relative;
+  top: -50px;
+}
+
+#MenuRestaurant #MenuRestaurant-Body #titleRestaurant {
+  display: flex;
+  font-family: "Shrikhand", sans-serif;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .select {
+  color: #9356DC;
+  border: none;
+  display: none;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .listMenu {
+  margin: 0 0 35px 0;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .listMenu .TypeMenu {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 0 10px;
+  width: 10%;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu {
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  box-shadow: 10px 10px 10px 0 #dfdfdf;
+  margin: 15px 15px 15px 15px;
+  display: flex;
+  background-color: white;
+  padding: 0;
+  overflow: hidden;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu {
+  padding: 15px;
+  width: 75%;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu h3, #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
+  margin: 0;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
+  display: flex;
+  justify-content: space-between;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .cartoucheTarif {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .select {
+  background: #99E2D0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: -150px;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .select .fa-check-circle {
+  color: white;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu:hover .select {
+  left: 1%;
+  margin: 0;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 #Fonctionnement {
-  margin: 0 15px 0 15px;
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -181,51 +321,20 @@ footer ol li {
   margin-right: 25px;
 }
 
-#MenuRestaurant {
-  margin: 0;
-}
+@media screen and (min-width: 1280px) {
+  #container {
+    max-width: 1500px;
+  }
 
-#MenuRestaurant #MenuRestaurant-Img {
-  width: 50%;
-}
+  #Nav {
+    display: flex;
+    justify-content: space-around;
+  }
 
-#MenuRestaurant #MenuRestaurant-Body {
-  -moz-border-radius: 15px 15px 0 0;
-  -webkit-border-radius: 15px 15px 0 0;
-  border-radius: 15px 15px 0 0;
-  background-color: #f3f3f3;
+  #listRestaurant {
+    display: flex;
+  }
 }
-
-#MenuRestaurant #MenuRestaurant-Body #TitleRestaurant {
-  display: flex;
-  font-family: "Roboto", sans-serif;
-  padding: 15px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu {
-  border: 1px solid black;
-  -moz-border-radius: 15px 15px 15px 15px;
-  -webkit-border-radius: 15px 15px 15px 15px;
-  border-radius: 15px 15px 15px 15px;
-  margin: 5px 5px 5px 5px;
-  display: flex;
-}
-
-#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu {
-  width: 100%;
-}
-
-#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu h3, #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
-  margin: 0;
-}
-
-#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
-  display: flex;
-  justify-content: space-between;
-}
-
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */

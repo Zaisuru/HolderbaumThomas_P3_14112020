@@ -1,0 +1,94 @@
+@import "variables";
+@import "mixin";
+
+#MenuRestaurant{
+  margin: 0 0 15px 0 ;
+  #MenuRestaurant-Img{
+    margin: 0;
+    img{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  }
+  #MenuRestaurant-Body{
+    @include border-radius(25px 25px 0 0 );
+    background-color: $fontColor;
+    position: relative;
+    top: -50px;
+    #titleRestaurant{
+      display: flex;
+      font-family: "Shrikhand", sans-serif;
+      padding: 15px;
+      justify-content: space-between;
+      align-items: center;
+      .select{
+        color: $primaryColor;
+        border: none;
+        display: none;
+      }
+    }
+    .listMenu{
+      margin: 0 0 35px 0;
+      .TypeMenu{
+        font-family: "Shrikhand", sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin:0 0 0 10px;
+        width: 10%;
+        border-bottom: 3px solid $tertiaryColor;
+        padding-bottom: 5px;
+      }
+    }
+
+    .cartoucheMenu{
+      @include border-radius(15px 15px 15px 15px);
+      @include fadein(fadein 2s);
+      @include box-shadow(10px 10px 10px 0 $shadowColor);
+      margin: 15px 15px 15px 15px;
+      display: flex;
+      background-color: white;
+      padding: 0;
+      overflow: hidden;
+      .ChoixMenu{
+        padding: 15px;
+        width: 75%;
+        h3,p{
+          margin: 0;
+        }
+        p{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .cartoucheTarif{
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      .select{
+        background: $tertiaryColor;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: -150px;
+        .fa-check-circle{
+          color: white;
+        }
+      }
+      &:hover{
+        .select{
+          left: 1%;
+          margin: 0;
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

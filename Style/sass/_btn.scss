@@ -1,11 +1,26 @@
 // Déclaration du scc pour les btn de Découverte et de commandes
+@import "variables";
+@import "mixin";
+
 
 .btn{
   color: white;
-  background-color: $secondaryColor;
+  background: linear-gradient($secondaryColor, $primaryColor);
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
   font-size: 15px;
+  width: 60%;
+  padding: 18px;
   border: none;
-  padding: 15px;
-  width: 50%;
   @include border-radius(20px);
+}
+
+
+
+#commande-Btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }

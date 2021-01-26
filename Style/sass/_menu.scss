@@ -1,23 +1,25 @@
 //Scss pour les du menu en index
 @import "variables";
+@import "mixin";
 
 #Menu{
   background-color: $fontColor;
   width: 100%;
-  margin: 0;
   .Restaurant{
     @include border-radius(15px);
     background-color: white;
     overflow: hidden;
+    height: 250px;
     @include box-shadow(10px 10px 10px 0 $shadowColor);
       img{
         width: 100%;
-        position: relative;
+        object-fit: cover;
     }
-    .RestaurantCard-Body{
+    .RestaurantCard{
       margin: 0;
       padding: 0;
       display: flex;
+      width: 100%;
       justify-content: space-between;
       align-items: center;
       .RestaurantCard-Body-Titre{
