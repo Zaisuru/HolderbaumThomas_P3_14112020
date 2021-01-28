@@ -2,6 +2,10 @@
 @import "variables";
 @import "mixin";
 
+header{
+  margin: 0;
+  padding: 0;
+}
 
 #top-header{
   display: flex;
@@ -35,6 +39,7 @@
   border-top: 3px solid #c2bdbd;
   width: 100%;
   margin: 0;
+  padding: 0;
   #ville-description{
     margin-left: 15px;
     font-family: "Roboto", sans-serif;
@@ -43,8 +48,9 @@
 
 #Banner{
   width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 5px;
+  padding: 0;
   text-align: center;
   background-color: $fontColor;
   font-family: "Roboto", sans-serif;

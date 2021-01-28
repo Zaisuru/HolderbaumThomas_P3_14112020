@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=#[$fonts]");
 @import url("https://fonts.googleapis.com/css2?family=#[$fonts]");
+header {
+  margin: 0;
+  padding: 0;
+}
+
 #top-header {
   display: flex;
 }
@@ -36,6 +41,7 @@
   border-top: 3px solid #c2bdbd;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 #ville #ville-description {
@@ -45,8 +51,9 @@
 
 #Banner {
   width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 5px;
+  padding: 0;
   text-align: center;
   background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
@@ -156,12 +163,14 @@ footer ol li i {
 
 #MenuRestaurant #MenuRestaurant-Img {
   margin: 0;
+  height: 300px;
 }
 
 #MenuRestaurant #MenuRestaurant-Img img {
   width: 100%;
   height: 100%;
   position: relative;
+  object-fit: cover;
 }
 
 #MenuRestaurant #MenuRestaurant-Body {
@@ -179,6 +188,14 @@ footer ol li i {
   padding: 15px;
   justify-content: space-between;
   align-items: center;
+}
+
+#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .fa-heart {
+  font-size: 25px;
+}
+
+#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .unselect:hover {
+  color: #9356DC;
 }
 
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .select {
@@ -206,10 +223,6 @@ footer ol li i {
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border-radius: 15px 15px 15px 15px;
   border-radius: 15px 15px 15px 15px;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s;
   -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
   -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
   box-shadow: 10px 10px 10px 0 #dfdfdf;
@@ -235,7 +248,7 @@ footer ol li i {
 }
 
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .cartoucheTarif {
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -257,10 +270,14 @@ footer ol li i {
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu:hover .select {
   left: 1%;
   margin: 0;
-  width: 30%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#loadingSpinner {
+  display: none;
 }
 
 html, body {
@@ -270,14 +287,21 @@ html, body {
 
 #Fonctionnement {
   font-family: "Shrikhand", sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+#Fonctionnement h2 {
+  margin: 15px 35px 0 35px;
 }
 
 #Fonctionnement .Cartouche {
   display: flex;
+  width: 80%;
   align-items: center;
+  justify-content: center;
   background-color: #f3f3f3;
-  margin: 35px 15px 35px 15px;
-  padding: 8px;
+  margin: 25px 35px 25px 35px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
@@ -323,7 +347,7 @@ html, body {
 
 @media screen and (min-width: 1280px) {
   #container {
-    max-width: 1500px;
+    padding: 0;
   }
 
   #Nav {

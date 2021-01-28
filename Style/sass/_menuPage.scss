@@ -1,14 +1,17 @@
 @import "variables";
 @import "mixin";
+@import "animations";
 
 #MenuRestaurant{
   margin: 0 0 15px 0 ;
   #MenuRestaurant-Img{
     margin: 0;
+    height: 300px;
     img{
       width: 100%;
       height: 100%;
       position: relative;
+      object-fit: cover;
     }
   }
   #MenuRestaurant-Body{
@@ -22,6 +25,12 @@
       padding: 15px;
       justify-content: space-between;
       align-items: center;
+      .fa-heart{
+        font-size: 25px;
+      }
+      .unselect:hover{
+        color: $primaryColor;
+      }
       .select{
         color: $primaryColor;
         border: none;
@@ -44,7 +53,6 @@
 
     .cartoucheMenu{
       @include border-radius(15px 15px 15px 15px);
-      @include fadein(fadein 2s);
       @include box-shadow(10px 10px 10px 0 $shadowColor);
       margin: 15px 15px 15px 15px;
       display: flex;
@@ -63,7 +71,7 @@
         }
       }
       .cartoucheTarif{
-        width: 20%;
+        width: 15%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -75,6 +83,7 @@
         align-items: center;
         position: relative;
         right: -150px;
+
         .fa-check-circle{
           color: white;
         }
@@ -83,7 +92,7 @@
         .select{
           left: 1%;
           margin: 0;
-          width: 30%;
+          width: 20%;
           display: flex;
           align-items: center;
           justify-content: center;

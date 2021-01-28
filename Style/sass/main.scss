@@ -8,6 +8,8 @@
 
 @import "menuPage";
 
+@import "loadingSpinner";
+
 // Fonts
 @include googleFonts(Roboto);
 @include googleFonts(Shrikhand);
@@ -21,12 +23,18 @@ html, body{
 
 #Fonctionnement{
   font-family: "Shrikhand", sans-serif;
+  margin: 0;
+  width: 100%;
+  h2{
+    margin: 15px 35px 0 35px;
+  }
   .Cartouche{
     display: flex;
+    width: 80%;
     align-items: center;
+    justify-content: center;
     background-color: $fontColor;
-    margin: 35px 15px 35px 15px;
-    padding: 8px;
+    margin: 25px 35px 25px 35px;
     @include border-radius(15px);
     @include box-shadow(10px 10px 10px 0 $shadowColor);
     &:hover{
@@ -65,7 +73,7 @@ html, body{
 // Partie Destkop
 @media screen and (min-width:1280px) {
   #container{
-    max-width: 1500px;
+    padding: 0;
   }
   #Nav{
     display: flex;
