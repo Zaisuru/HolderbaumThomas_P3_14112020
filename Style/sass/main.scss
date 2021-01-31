@@ -5,9 +5,7 @@
 @import "btn";
 @import "menu";
 @import "footer";
-
 @import "menuPage";
-
 @import "loadingSpinner";
 
 // Fonts
@@ -15,7 +13,7 @@
 @include googleFonts(Shrikhand);
 
 // Partie général
-html, body{
+html, body, #container{
   margin: 0;
   padding: 0;
 }
@@ -28,44 +26,51 @@ html, body{
   h2{
     margin: 15px 35px 0 35px;
   }
-  .Cartouche{
+  #Nav{
     display: flex;
-    width: 80%;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: $fontColor;
-    margin: 25px 35px 25px 35px;
-    @include border-radius(15px);
-    @include box-shadow(10px 10px 10px 0 $shadowColor);
-    &:hover{
-      background-color: lighten($primaryColor, 35%);
-      .cartouche-I{
-        color: $primaryColor;
+    margin: 20px 0 20px 0;
+    padding: 0;
+      .Cartouche{
+      display: flex;
+      width: 70%;
+      align-items: center;
+      background-color: $fontColor;
+      margin: 10px 35px 10px 35px;
+      @include border-radius(15px);
+      @include box-shadow(10px 10px 10px 0 $shadowColor);
+      &:hover{
+        background-color: lighten($primaryColor, 35%);
+        .cartouche-I{
+          color: $primaryColor;
+        }
       }
-    }
-    .Cartouche-Number{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $primaryColor;
-      width: 30px;
-      height: 30px;
-      color: white;
-      margin: -1px -1px -1px -20px;
-      text-align: center;
-      @include border-radius(50%);
-    }
-    .Cartouche-Select{
-      display: flex;
-      margin-left: 25px;
-      align-items: center;
-      font-weight: bold;
-      .cartouche-I{
-        margin-right: 25px;
+      .Cartouche-Number{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+        width: 30px;
+        height: 30px;
+        color: white;
+        margin: -1px -1px -1px -10px;
+        text-align: center;
+        @include border-radius(50%);
+      }
+      .Cartouche-Select{
+        display: flex;
+        margin-left: 25px;
+        align-items: center;
+        font-weight: bold;
+        .cartouche-I{
+          margin-right: 25px;
+        }
       }
     }
   }
+
 }
 
 

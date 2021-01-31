@@ -29,12 +29,10 @@
         font-size: 25px;
       }
       .unselect:hover{
-        color: $primaryColor;
+        color: linear-gradient($secondaryColor, $primaryColor);
       }
       .select{
-        color: $primaryColor;
-        border: none;
-        display: none;
+        color:$primaryColor;
       }
     }
     .listMenu{

@@ -5,15 +5,29 @@
 #Menu{
   background-color: $fontColor;
   width: 100%;
+  h2{
+    margin: 0 35px 0 35px;
+    padding: 20px 0 20px 0;
+  }
+  #listRestaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px 0 25px;
+  }
   .Restaurant{
     @include border-radius(15px);
     background-color: white;
     overflow: hidden;
-    height: 250px;
+    height: 300px;
+    width: 100%;
     @include box-shadow(10px 10px 10px 0 $shadowColor);
       img{
         width: 100%;
+        height: 100%;
         object-fit: cover;
+        position: relative;
+        top: -70px;
     }
     .RestaurantCard{
       margin: 0;
@@ -22,6 +36,9 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
+      position: relative;
+      background-color: white;
+      top: -80px;
       .RestaurantCard-Body-Titre{
         margin: 0;
         padding: 10px;
@@ -29,6 +46,12 @@
           margin: 0;
           padding: 0;
         }
+      }
+      .fa-heart{
+        font-size: 20px;
+      }
+      .fa-heart-like{
+        color: $primaryColor;
       }
     }
   }

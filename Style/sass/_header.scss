@@ -54,7 +54,11 @@ header{
   text-align: center;
   background-color: $fontColor;
   font-family: "Roboto", sans-serif;
-  h1,p,.btn{
+  h1{
+    margin: 0;
+    padding: 15px;
+  }
+  p,.btn{
     margin: 15px 15px 15px 15px;
   }
 }

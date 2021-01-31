@@ -55,7 +55,11 @@ header {
   background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
 }
-#Banner h1, #Banner p, #Banner .btn {
+#Banner h1 {
+  margin: 0;
+  padding: 15px;
+}
+#Banner p, #Banner .btn {
   margin: 15px 15px 15px 15px;
 }
 
@@ -85,20 +89,34 @@ header {
   background-color: #f3f3f3;
   width: 100%;
 }
+#Menu h2 {
+  margin: 0 35px 0 35px;
+  padding: 20px 0 20px 0;
+}
+#Menu #listRestaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px 0 25px;
+}
 #Menu .Restaurant {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
-  height: 250px;
+  height: 300px;
+  width: 100%;
   -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
   -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
   box-shadow: 10px 10px 10px 0 #dfdfdf;
 }
 #Menu .Restaurant img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  position: relative;
+  top: -70px;
 }
 #Menu .Restaurant .RestaurantCard {
   margin: 0;
@@ -107,6 +125,9 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  background-color: white;
+  top: -80px;
 }
 #Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre {
   margin: 0;
@@ -115,6 +136,12 @@ header {
 #Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre h3, #Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre p {
   margin: 0;
   padding: 0;
+}
+#Menu .Restaurant .RestaurantCard .fa-heart {
+  font-size: 20px;
+}
+#Menu .Restaurant .RestaurantCard .fa-heart-like {
+  color: #9356DC;
 }
 
 footer {
@@ -128,7 +155,7 @@ footer {
 }
 footer #footerLogo {
   font-family: "Shrikhand", sans-serif;
-  margin: 10px 10px 10px 40px;
+  margin: 0 10px 10px 40px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -176,12 +203,10 @@ footer ol li i {
   font-size: 25px;
 }
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .unselect:hover {
-  color: #9356DC;
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .select {
   color: #9356DC;
-  border: none;
-  display: none;
 }
 #MenuRestaurant #MenuRestaurant-Body .listMenu {
   margin: 0 0 35px 0;
@@ -250,7 +275,7 @@ footer ol li i {
   display: none;
 }
 
-html, body {
+html, body, #container {
   margin: 0;
   padding: 0;
 }
@@ -263,13 +288,19 @@ html, body {
 #Fonctionnement h2 {
   margin: 15px 35px 0 35px;
 }
-#Fonctionnement .Cartouche {
+#Fonctionnement #Nav {
   display: flex;
-  width: 80%;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin: 20px 0 20px 0;
+  padding: 0;
+}
+#Fonctionnement #Nav .Cartouche {
+  display: flex;
+  width: 70%;
+  align-items: center;
   background-color: #f3f3f3;
-  margin: 25px 35px 25px 35px;
+  margin: 10px 35px 10px 35px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
@@ -277,13 +308,13 @@ html, body {
   -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
   box-shadow: 10px 10px 10px 0 #dfdfdf;
 }
-#Fonctionnement .Cartouche:hover {
+#Fonctionnement #Nav .Cartouche:hover {
   background-color: #f2eafb;
 }
-#Fonctionnement .Cartouche:hover .cartouche-I {
+#Fonctionnement #Nav .Cartouche:hover .cartouche-I {
   color: #9356DC;
 }
-#Fonctionnement .Cartouche .Cartouche-Number {
+#Fonctionnement #Nav .Cartouche .Cartouche-Number {
   position: relative;
   display: flex;
   justify-content: center;
@@ -292,19 +323,19 @@ html, body {
   width: 30px;
   height: 30px;
   color: white;
-  margin: -1px -1px -1px -20px;
+  margin: -1px -1px -1px -10px;
   text-align: center;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-#Fonctionnement .Cartouche .Cartouche-Select {
+#Fonctionnement #Nav .Cartouche .Cartouche-Select {
   display: flex;
   margin-left: 25px;
   align-items: center;
   font-weight: bold;
 }
-#Fonctionnement .Cartouche .Cartouche-Select .cartouche-I {
+#Fonctionnement #Nav .Cartouche .Cartouche-Select .cartouche-I {
   margin-right: 25px;
 }
 
