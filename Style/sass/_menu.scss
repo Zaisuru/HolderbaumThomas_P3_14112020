@@ -51,8 +51,11 @@
         font-size: 20px;
       }
       .fa-heart-like{
-        color: $primaryColor;
+        background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
 }
+

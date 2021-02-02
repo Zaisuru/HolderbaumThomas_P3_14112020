@@ -49,8 +49,7 @@ header{
 #Banner{
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 30px 0 30px 0;
   text-align: center;
   background-color: $fontColor;
   font-family: "Roboto", sans-serif;
@@ -58,7 +57,11 @@ header{
     margin: 0;
     padding: 15px;
   }
-  p,.btn{
-    margin: 15px 15px 15px 15px;
+  p{
+    margin: 0 15px 0 15px;
+    color: $silverColor;
+  }
+  .btn{
+    margin: 25px 0 15px 0;
   }
 }

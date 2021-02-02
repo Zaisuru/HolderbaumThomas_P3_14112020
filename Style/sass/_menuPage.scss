@@ -32,7 +32,9 @@
         color: linear-gradient($secondaryColor, $primaryColor);
       }
       .select{
-        color:$primaryColor;
+        background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
     .listMenu{

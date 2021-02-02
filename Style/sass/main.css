@@ -49,8 +49,7 @@ header {
 #Banner {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 30px 0 30px 0;
   text-align: center;
   background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
@@ -59,8 +58,12 @@ header {
   margin: 0;
   padding: 15px;
 }
-#Banner p, #Banner .btn {
-  margin: 15px 15px 15px 15px;
+#Banner p {
+  margin: 0 15px 0 15px;
+  color: #656565;
+}
+#Banner .btn {
+  margin: 25px 0 15px 0;
 }
 
 .btn {
@@ -70,11 +73,11 @@ header {
   font-weight: bold;
   font-size: 15px;
   width: 60%;
-  padding: 18px;
+  padding: 15px;
   border: none;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
 }
 
 #commande-Btn {
@@ -141,7 +144,9 @@ header {
   font-size: 20px;
 }
 #Menu .Restaurant .RestaurantCard .fa-heart-like {
-  color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -206,7 +211,9 @@ footer ol li i {
   color: linear-gradient(#FF79DA, #9356DC);
 }
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .select {
-  color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #MenuRestaurant #MenuRestaurant-Body .listMenu {
   margin: 0 0 35px 0;
@@ -275,6 +282,20 @@ footer ol li i {
   display: none;
 }
 
+@media screen and (min-width: 1280px) {
+  #Nav {
+    flex-direction: row;
+  }
+
+  #Menu #listRestaurant {
+    align-items: center;
+    flex-direction: initial;
+    padding: 15px;
+  }
+  #Menu #listRestaurant .Restaurant {
+    width: 400px;
+  }
+}
 html, body, #container {
   margin: 0;
   padding: 0;
@@ -337,21 +358,6 @@ html, body, #container {
 }
 #Fonctionnement #Nav .Cartouche .Cartouche-Select .cartouche-I {
   margin-right: 25px;
-}
-
-@media screen and (min-width: 1280px) {
-  #container {
-    padding: 0;
-  }
-
-  #Nav {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #listRestaurant {
-    display: flex;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,7 +7,7 @@
 @import "footer";
 @import "menuPage";
 @import "loadingSpinner";
-
+@import "responsive";
 // Fonts
 @include googleFonts(Roboto);
 @include googleFonts(Shrikhand);
@@ -17,6 +17,8 @@ html, body, #container{
   margin: 0;
   padding: 0;
 }
+
+
 // Partie fonctionnement
 
 #Fonctionnement{
@@ -75,16 +77,3 @@ html, body, #container{
 
 
 
-// Partie Destkop
-@media screen and (min-width:1280px) {
-  #container{
-    padding: 0;
-  }
-  #Nav{
-    display: flex;
-    justify-content: space-around;
-  }
-  #listRestaurant{
-    display: flex;
-  }
-}
