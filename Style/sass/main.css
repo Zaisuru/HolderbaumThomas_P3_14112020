@@ -54,12 +54,12 @@ header {
   background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
 }
-#Banner h1 {
-  margin: 0;
-  padding: 15px;
+#Banner h2 {
+  margin: 0 18px 0 18px;
+  padding: 18px;
 }
 #Banner p {
-  margin: 0 15px 0 15px;
+  margin: 0 18px 0 18px;
   color: #656565;
 }
 #Banner .btn {
@@ -69,8 +69,7 @@ header {
 .btn {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
-  font-family: "Shrikhand", sans-serif;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   width: 60%;
   padding: 15px;
@@ -93,8 +92,8 @@ header {
   width: 100%;
 }
 #Menu h2 {
-  margin: 0 35px 0 35px;
-  padding: 20px 0 20px 0;
+  margin: 50px 35px 0 35px;
+  padding: 35px 0 20px 0;
 }
 #Menu #listRestaurant {
   display: flex;
@@ -179,7 +178,7 @@ footer ol li i {
 }
 
 #MenuRestaurant {
-  margin: 0 0 15px 0;
+  background-color: #f3f3f3;
 }
 #MenuRestaurant #MenuRestaurant-Img {
   margin: 0;
@@ -209,9 +208,6 @@ footer ol li i {
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .fa-heart {
   font-size: 25px;
 }
-#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .unselect:hover {
-  color: linear-gradient(#FF79DA, #9356DC);
-}
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .select {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -221,7 +217,8 @@ footer ol li i {
   margin: 0 0 35px 0;
 }
 #MenuRestaurant #MenuRestaurant-Body .listMenu .TypeMenu {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #656565;
   font-size: 15px;
   font-weight: normal;
   text-transform: uppercase;
@@ -246,6 +243,8 @@ footer ol li i {
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu {
   padding: 15px;
   width: 75%;
+  white-space: nowrap;
+  background: pink;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu h3, #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
   margin: 0;
@@ -253,12 +252,14 @@ footer ol li i {
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
   display: flex;
   justify-content: space-between;
+  color: #656565;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .cartoucheTarif {
   width: 15%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  background: purple;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .select {
   background: #99E2D0;
@@ -286,16 +287,25 @@ footer ol li i {
 
 @media screen and (min-width: 1280px) {
   #Nav {
-    flex-direction: row;
+    flex-direction: initial;
   }
 
   #Menu #listRestaurant {
     align-items: center;
     flex-direction: initial;
+    flex-wrap: wrap;
     padding: 15px;
   }
   #Menu #listRestaurant .Restaurant {
     width: 400px;
+  }
+
+  .containerMenu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .containerMenu .listMenu {
+    width: 30%;
   }
 }
 html, body, #container {
@@ -319,7 +329,8 @@ html, body, #container {
 }
 #Fonctionnement #Nav .Cartouche {
   display: flex;
-  width: 70%;
+  height: 60px;
+  width: 75%;
   align-items: center;
   background-color: #f3f3f3;
   margin: 10px 35px 10px 35px;
@@ -355,7 +366,8 @@ html, body, #container {
   display: flex;
   margin-left: 25px;
   align-items: center;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 #Fonctionnement #Nav .Cartouche .Cartouche-Select .cartouche-I {
   margin-right: 25px;

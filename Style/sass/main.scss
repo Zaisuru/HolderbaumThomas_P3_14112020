@@ -1,13 +1,13 @@
 // Déclaration des pages
-@import "variables";
-@import "header";
-@import "mixin";
-@import "btn";
-@import "menu";
-@import "footer";
-@import "menuPage";
-@import "loadingSpinner";
-@import "responsive";
+@import "Utils/variables";
+@import "Layout/header";
+@import "Utils/mixin";
+@import "Components/btn";
+@import "Layout/menu";
+@import "Layout/footer";
+@import "Layout/menuPage";
+@import "Components/loadingSpinner";
+@import "Pages/responsive";
 // Fonts
 @include googleFonts(Roboto);
 @include googleFonts(Shrikhand);
@@ -17,7 +17,6 @@ html, body, #container{
   margin: 0;
   padding: 0;
 }
-
 
 // Partie fonctionnement
 
@@ -34,19 +33,20 @@ html, body, #container{
     margin: 20px 0 20px 0;
     padding: 0;
       .Cartouche{
-      display: flex;
-      width: 70%;
-      align-items: center;
-      background-color: $fontColor;
-      margin: 10px 35px 10px 35px;
-      @include border-radius(15px);
-      @include box-shadow(10px 10px 10px 0 $shadowColor);
-      &:hover{
-        background-color: lighten($primaryColor, 35%);
-        .cartouche-I{
-          color: $primaryColor;
+        display: flex;
+        height: 60px;
+        width: 75%;
+        align-items: center;
+        background-color: $fontColor;
+        margin: 10px 35px 10px 35px;
+        @include border-radius(15px);
+        @include box-shadow(10px 10px 10px 0 $shadowColor);
+        &:hover{
+          background-color: lighten($primaryColor, 35%);
+          .cartouche-I{
+            color: $primaryColor;
+          }
         }
-      }
       .Cartouche-Number{
         position: relative;
         display: flex;
@@ -64,7 +64,8 @@ html, body, #container{
         display: flex;
         margin-left: 25px;
         align-items: center;
-        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
         .cartouche-I{
           margin-right: 25px;
         }

@@ -1,13 +1,13 @@
 //Scss pour les du menu en index
-@import "variables";
-@import "mixin";
+@import "../Utils/variables";
+@import "../Utils/mixin";
 
 #Menu{
   background-color: $fontColor;
   width: 100%;
   h2{
-    margin: 0 35px 0 35px;
-    padding: 20px 0 20px 0;
+    margin: 50px 35px 0 35px;
+    padding: 35px 0 20px 0;
   }
   #listRestaurant{
     display: flex;

@@ -1,13 +1,12 @@
 // Déclaration du scc pour les btn de Découverte et de commandes
-@import "variables";
-@import "mixin";
+@import "../Utils/variables";
+@import "../Utils/mixin";
 
 
 .btn{
   color: white;
   background: linear-gradient($secondaryColor, $primaryColor);
-  font-family: "Shrikhand", sans-serif;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   width: 60%;
   padding: 15px;

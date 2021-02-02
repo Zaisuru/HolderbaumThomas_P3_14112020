@@ -1,9 +1,9 @@
-@import "variables";
-@import "mixin";
-@import "animations";
+@import "../Utils/variables";
+@import "../Utils/mixin";
+@import "../Components/animations";
 
 #MenuRestaurant{
-  margin: 0 0 15px 0 ;
+  background-color: $fontColor;
   #MenuRestaurant-Img{
     margin: 0;
     height: 300px;
@@ -28,9 +28,6 @@
       .fa-heart{
         font-size: 25px;
       }
-      .unselect:hover{
-        color: linear-gradient($secondaryColor, $primaryColor);
-      }
       .select{
         background: -webkit-linear-gradient($primaryColor, $secondaryColor);
         -webkit-background-clip: text;
@@ -40,7 +37,8 @@
     .listMenu{
       margin: 0 0 35px 0;
       .TypeMenu{
-        font-family: "Shrikhand", sans-serif;
+        font-family: "Roboto", sans-serif;
+        color: $silverColor;
         font-size: 15px;
         font-weight: normal;
         text-transform: uppercase;
@@ -62,12 +60,15 @@
       .ChoixMenu{
         padding: 15px;
         width: 75%;
+        white-space: nowrap;
+        background: pink;
         h3,p{
           margin: 0;
         }
         p{
           display: flex;
           justify-content: space-between;
+          color: $silverColor;
         }
       }
       .cartoucheTarif{
@@ -75,6 +76,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        background: purple;
       }
       .select{
         background: $tertiaryColor;

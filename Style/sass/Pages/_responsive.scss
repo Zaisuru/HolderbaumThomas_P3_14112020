@@ -1,0 +1,36 @@
+@import '../Utils/variables';
+@import '../Utils/mixin';
+@import '../Components/animations';
+
+
+// Partie Destkop
+@media screen and (min-width:1280px) {
+
+  // partie page index
+  #Nav{
+      flex-direction: initial;
+  }
+  #Menu #listRestaurant{
+    align-items: center;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    padding: 15px;
+    .Restaurant{
+      width: 400px;
+    }
+  }
+
+
+  // Partie page menu
+  .containerMenu{
+    display: flex;
+    justify-content: space-between;
+
+    .listMenu{
+      width: 30%;
+    }
+  }
+}
+
+
+

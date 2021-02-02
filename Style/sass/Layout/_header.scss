@@ -1,6 +1,6 @@
 // Scss header
-@import "variables";
-@import "mixin";
+@import "../Utils/variables";
+@import "../Utils/mixin";
 
 header{
   margin: 0;
@@ -53,12 +53,12 @@ header{
   text-align: center;
   background-color: $fontColor;
   font-family: "Roboto", sans-serif;
-  h1{
-    margin: 0;
-    padding: 15px;
+  h2{
+    margin: 0 18px 0 18px;
+    padding: 18px;
   }
   p{
-    margin: 0 15px 0 15px;
+    margin: 0 18px 0 18px;
     color: $silverColor;
   }
   .btn{
