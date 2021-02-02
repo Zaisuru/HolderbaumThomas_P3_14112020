@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=#[$fonts]");
-@import url("https://fonts.googleapis.com/css2?family=#[$fonts]");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand");
 header {
   margin: 0;
   padding: 0;
@@ -140,6 +140,10 @@ header {
   margin: 0;
   padding: 0;
 }
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre p {
+  color: #656565;
+  font-size: 16px;
+}
 #Menu .Restaurant .RestaurantCard .fa-heart {
   font-size: 20px;
 }
@@ -151,18 +155,16 @@ header {
 
 footer {
   background-color: #575555;
-  font-family: "Roboto", sans-serif;
   color: white;
   margin: 0;
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding: 25px 0 25px 0;
 }
 footer #footerLogo {
   font-family: "Shrikhand", sans-serif;
   margin: 0 10px 10px 40px;
   font-size: 18px;
-  font-weight: bold;
 }
 footer ol {
   margin: 0;
@@ -302,7 +304,6 @@ html, body, #container {
 }
 
 #Fonctionnement {
-  font-family: "Shrikhand", sans-serif;
   margin: 0;
   width: 100%;
 }
