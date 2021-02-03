@@ -57,11 +57,11 @@
       background-color: white;
       padding: 0;
       overflow: hidden;
+      animation: transitionMenu ease-in-out 3s;
       .ChoixMenu{
         padding: 15px;
         width: 75%;
         white-space: nowrap;
-        background: pink;
         h3,p{
           margin: 0;
         }
@@ -76,7 +76,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        background: purple;
       }
       .select{
         background: $tertiaryColor;

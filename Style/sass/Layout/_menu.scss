@@ -71,11 +71,22 @@
       }
       .fa-heart{
         font-size: 20px;
+        padding: 25px;
+      }
+      .RestaurantCard-Body-Heart:hover{
+        cursor: pointer;
+        .fa-heart-unlike{
+          display: none;
+        }
+        .fa-heart-like{
+          display: block;
+        }
       }
       .fa-heart-like{
         background: -webkit-linear-gradient($primaryColor, $secondaryColor);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        display: none;
       }
     }
   }

@@ -162,11 +162,22 @@ header {
 }
 #Menu .Restaurant .RestaurantCard .fa-heart {
   font-size: 20px;
+  padding: 25px;
+}
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Heart:hover {
+  cursor: pointer;
+}
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Heart:hover .fa-heart-unlike {
+  display: none;
+}
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Heart:hover .fa-heart-like {
+  display: block;
 }
 #Menu .Restaurant .RestaurantCard .fa-heart-like {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: none;
 }
 
 footer {
@@ -194,6 +205,17 @@ footer ol li i {
   margin-right: 5px;
 }
 
+@keyframes transitionMenu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #MenuRestaurant {
   background-color: #f3f3f3;
 }
@@ -256,12 +278,12 @@ footer ol li i {
   background-color: white;
   padding: 0;
   overflow: hidden;
+  animation: transitionMenu ease-in-out 3s;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu {
   padding: 15px;
   width: 75%;
   white-space: nowrap;
-  background: pink;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu h3, #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
   margin: 0;
@@ -276,7 +298,6 @@ footer ol li i {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  background: purple;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .select {
   background: #99E2D0;
@@ -302,6 +323,17 @@ footer ol li i {
   display: none;
 }
 
+@keyframes transitionMenu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 1280px) {
   #Fonctionnement #Nav {
     flex-direction: row !important;
@@ -309,6 +341,7 @@ footer ol li i {
 
   #Menu #listRestaurant {
     align-items: center;
+    justify-content: space-around;
     flex-direction: initial;
     flex-wrap: wrap;
     padding: 15px;
