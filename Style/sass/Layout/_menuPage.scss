@@ -25,6 +25,16 @@
       padding: 15px;
       justify-content: space-between;
       align-items: center;
+      .titleRestaurant-like:hover{
+        cursor: pointer;
+        .unselect{
+          display: none;
+        }
+        .select{
+          display: block;
+        }
+
+      }
       .fa-heart{
         font-size: 25px;
       }
@@ -32,6 +42,7 @@
         background: -webkit-linear-gradient($primaryColor, $secondaryColor);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        display: none;
       }
     }
     .listMenu{
@@ -57,7 +68,6 @@
       background-color: white;
       padding: 0;
       overflow: hidden;
-      animation: transitionMenu ease-in-out 3s;
       .ChoixMenu{
         padding: 15px;
         width: 75%;
@@ -87,6 +97,7 @@
 
         .fa-check-circle{
           color: white;
+          font-size: 20px;
         }
       }
       &:hover{
@@ -97,6 +108,11 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          .fa-check-circle{
+            transition-duration: .3s;
+            transition-delay: 0.1ms;
+            transform: rotate(360deg);
+          }
         }
       }
     }

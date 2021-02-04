@@ -80,6 +80,7 @@ header {
   width: 60%;
   padding: 15px;
   border: none;
+  cursor: pointer;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
@@ -242,6 +243,28 @@ footer ol li i {
     opacity: 1;
   }
 }
+.card1 {
+  animation: transitionMenu ease-in-out 1s;
+}
+
+.card2 {
+  animation: transitionMenu ease-in-out 1.5s;
+}
+
+.card3 {
+  animation: transitionMenu ease-in-out 2.5s;
+}
+
+@keyframes circleCheck {}
+.fa-check-circle {
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+
+.select:hover .fa-check-circle {
+  transform: rotate(45deg);
+}
+
 #MenuRestaurant {
   background-color: #f3f3f3;
 }
@@ -275,6 +298,18 @@ footer ol li i {
   align-items: center;
 }
 
+#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .titleRestaurant-like:hover {
+  cursor: pointer;
+}
+
+#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .titleRestaurant-like:hover .unselect {
+  display: none;
+}
+
+#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .titleRestaurant-like:hover .select {
+  display: block;
+}
+
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .fa-heart {
   font-size: 25px;
 }
@@ -283,6 +318,7 @@ footer ol li i {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: none;
 }
 
 #MenuRestaurant #MenuRestaurant-Body .listMenu {
@@ -313,7 +349,6 @@ footer ol li i {
   background-color: white;
   padding: 0;
   overflow: hidden;
-  animation: transitionMenu ease-in-out 3s;
 }
 
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu {
@@ -350,6 +385,7 @@ footer ol li i {
 
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .select .fa-check-circle {
   color: white;
+  font-size: 20px;
 }
 
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu:hover .select {
@@ -359,6 +395,12 @@ footer ol li i {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .cartoucheMenu:hover .select .fa-check-circle {
+  transition-duration: 0.3s;
+  transition-delay: 0.1ms;
+  transform: rotate(360deg);
 }
 
 #loadingSpinner {
@@ -376,7 +418,37 @@ footer ol li i {
     opacity: 1;
   }
 }
-@media screen and (min-width: 1280px) {
+.card1 {
+  animation: transitionMenu ease-in-out 1s;
+}
+
+.card2 {
+  animation: transitionMenu ease-in-out 1.5s;
+}
+
+.card3 {
+  animation: transitionMenu ease-in-out 2.5s;
+}
+
+@keyframes circleCheck {}
+.fa-check-circle {
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+
+.select:hover .fa-check-circle {
+  transform: rotate(45deg);
+}
+
+@media screen and (min-width: 1024px) {
+  #logo img {
+    width: 20%;
+  }
+
+  #arrowBack {
+    display: none;
+  }
+
   #Fonctionnement #Nav {
     flex-direction: row !important;
   }

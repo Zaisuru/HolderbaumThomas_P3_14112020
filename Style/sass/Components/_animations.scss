@@ -16,3 +16,25 @@
 }
 
 
+.card1{
+  animation: transitionMenu ease-in-out 1s;
+}
+.card2{
+  animation: transitionMenu ease-in-out 1.5s;
+}
+.card3{
+  animation: transitionMenu ease-in-out 2.5s;
+}
+
+@keyframes circleCheck {
+  
+}
+
+.fa-check-circle{
+  transition-duration: .5s;
+  transition-delay: 1s;
+}
+.select:hover .fa-check-circle
+{
+  transform: rotate(45deg);
+}
