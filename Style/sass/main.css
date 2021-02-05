@@ -30,6 +30,9 @@ header {
   padding: 15px;
   width: 40%;
 }
+#logo h1 {
+  display: none;
+}
 
 #ville {
   background-color: #e2e1e1;
@@ -66,6 +69,31 @@ header {
   margin: 25px 0 15px 0;
 }
 
+footer {
+  background-color: #575555;
+  color: white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25px 0 25px 0;
+}
+footer #footerLogo {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0 10px 10px 40px;
+  font-size: 18px;
+}
+footer ol {
+  margin: 0;
+}
+footer ol li {
+  list-style: none;
+  padding: 3px;
+}
+footer ol li i {
+  width: 20px;
+  margin-right: 5px;
+}
+
 .btn {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -79,6 +107,12 @@ header {
   -webkit-border-radius: 25px;
   border-radius: 25px;
 }
+.btn:hover {
+  opacity: 0.9;
+  -moz-box-shadow: 5px 1px 5px 1px #dfdfdf;
+  -webkit-box-shadow: 5px 1px 5px 1px #dfdfdf;
+  box-shadow: 5px 1px 5px 1px #dfdfdf;
+}
 
 #commande-Btn {
   display: flex;
@@ -86,6 +120,112 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+
+#loadingSpinner {
+  display: none;
+}
+
+@keyframes transitionMenu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fa-heart {
+  font-size: 25px;
+  color: #ececec;
+  text-shadow: black 1px 0, black -1px 0, black 0 1px, black 0 -1px;
+  -webkit-transition: background-color 1s ease-in, color ease-out 1s;
+  transition: background-color 1s ease-in, color ease-out 1s;
+}
+.fa-heart:hover {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(70%), to(#ff79da));
+  background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.card1 {
+  animation: transitionMenu ease-in-out 1s;
+}
+
+.card2 {
+  transition-delay: 2s;
+  animation: transitionMenu ease-in-out 1s;
+}
+
+.card3 {
+  transition-delay: 4s;
+  animation: transitionMenu ease-in-out 1s;
+}
+
+#Fonctionnement {
+  margin: 0;
+  width: 100%;
+}
+#Fonctionnement h2 {
+  margin: 15px 35px 0 35px;
+}
+#Fonctionnement #Nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  padding: 0;
+}
+#Fonctionnement #Nav .Cartouche {
+  display: flex;
+  height: 60px;
+  width: 75%;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin: 10px 35px 10px 35px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
+  box-shadow: 10px 10px 10px 0 #dfdfdf;
+}
+#Fonctionnement #Nav .Cartouche:hover {
+  background-color: #f2eafb;
+}
+#Fonctionnement #Nav .Cartouche:hover .cartouche-I {
+  color: #9356DC;
+}
+#Fonctionnement #Nav .Cartouche .Cartouche-Number {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  color: white;
+  margin: -1px -1px -1px -10px;
+  text-align: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#Fonctionnement #Nav .Cartouche .Cartouche-Select {
+  display: flex;
+  margin-left: 25px;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+#Fonctionnement #Nav .Cartouche .Cartouche-Select .cartouche-I {
+  margin-right: 25px;
 }
 
 #Menu {
@@ -161,50 +301,6 @@ header {
   color: #656565;
   font-size: 16px;
 }
-#Menu .Restaurant .RestaurantCard .fa-heart {
-  font-size: 20px;
-  padding: 25px;
-}
-#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Heart:hover {
-  cursor: pointer;
-}
-#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Heart:hover .fa-heart-unlike {
-  display: none;
-}
-#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Heart:hover .fa-heart-like {
-  display: block;
-}
-#Menu .Restaurant .RestaurantCard .fa-heart-like {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: none;
-}
-
-footer {
-  background-color: #575555;
-  color: white;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding: 25px 0 25px 0;
-}
-footer #footerLogo {
-  font-family: "Shrikhand", sans-serif;
-  margin: 0 10px 10px 40px;
-  font-size: 18px;
-}
-footer ol {
-  margin: 0;
-}
-footer ol li {
-  list-style: none;
-  padding: 3px;
-}
-footer ol li i {
-  width: 20px;
-  margin-right: 5px;
-}
 
 @keyframes transitionMenu {
   0% {
@@ -217,26 +313,35 @@ footer ol li i {
     opacity: 1;
   }
 }
+.fa-heart {
+  font-size: 25px;
+  color: #ececec;
+  text-shadow: black 1px 0, black -1px 0, black 0 1px, black 0 -1px;
+  -webkit-transition: background-color 1s ease-in, color ease-out 1s;
+  transition: background-color 1s ease-in, color ease-out 1s;
+}
+.fa-heart:hover {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(70%), to(#ff79da));
+  background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
 .card1 {
   animation: transitionMenu ease-in-out 1s;
 }
 
 .card2 {
-  animation: transitionMenu ease-in-out 1.5s;
+  transition-delay: 2s;
+  animation: transitionMenu ease-in-out 1s;
 }
 
 .card3 {
-  animation: transitionMenu ease-in-out 2.5s;
-}
-
-@keyframes circleCheck {}
-.fa-check-circle {
-  transition-duration: 0.5s;
-  transition-delay: 1s;
-}
-
-.select:hover .fa-check-circle {
-  transform: rotate(45deg);
+  transition-delay: 4s;
+  animation: transitionMenu ease-in-out 1s;
 }
 
 #MenuRestaurant {
@@ -276,15 +381,6 @@ footer ol li i {
 #MenuRestaurant #MenuRestaurant-Body #titleRestaurant .titleRestaurant-like:hover .select {
   display: block;
 }
-#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .fa-heart {
-  font-size: 25px;
-}
-#MenuRestaurant #MenuRestaurant-Body #titleRestaurant .select {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: none;
-}
 #MenuRestaurant #MenuRestaurant-Body .listMenu {
   margin: 0 0 35px 0;
 }
@@ -309,13 +405,19 @@ footer ol li i {
   margin: 15px 15px 15px 15px;
   display: flex;
   background-color: white;
+  justify-content: space-between;
   padding: 0;
+  position: relative;
   overflow: hidden;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu {
   padding: 15px;
   width: 75%;
   white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu h3, #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .ChoixMenu p {
   margin: 0;
@@ -328,16 +430,18 @@ footer ol li i {
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .cartoucheTarif {
   width: 15%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  align-self: flex-end;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .select {
   background: #99E2D0;
   margin: 0;
-  display: flex;
-  align-items: center;
-  position: relative;
-  right: -150px;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  transition-duration: 0.4s;
+  transform: translateX(360px);
+  position: absolute;
 }
 #MenuRestaurant #MenuRestaurant-Body .cartoucheMenu .select .fa-check-circle {
   color: white;
@@ -357,10 +461,6 @@ footer ol li i {
   transform: rotate(360deg);
 }
 
-#loadingSpinner {
-  display: none;
-}
-
 @keyframes transitionMenu {
   0% {
     opacity: 0;
@@ -372,35 +472,40 @@ footer ol li i {
     opacity: 1;
   }
 }
+.fa-heart {
+  font-size: 25px;
+  color: #ececec;
+  text-shadow: black 1px 0, black -1px 0, black 0 1px, black 0 -1px;
+  -webkit-transition: background-color 1s ease-in, color ease-out 1s;
+  transition: background-color 1s ease-in, color ease-out 1s;
+}
+.fa-heart:hover {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(70%), to(#ff79da));
+  background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
 .card1 {
   animation: transitionMenu ease-in-out 1s;
 }
 
 .card2 {
-  animation: transitionMenu ease-in-out 1.5s;
+  transition-delay: 2s;
+  animation: transitionMenu ease-in-out 1s;
 }
 
 .card3 {
-  animation: transitionMenu ease-in-out 2.5s;
-}
-
-@keyframes circleCheck {}
-.fa-check-circle {
-  transition-duration: 0.5s;
-  transition-delay: 1s;
-}
-
-.select:hover .fa-check-circle {
-  transform: rotate(45deg);
+  transition-delay: 4s;
+  animation: transitionMenu ease-in-out 1s;
 }
 
 @media screen and (min-width: 1024px) {
   #logo img {
     width: 20%;
-  }
-
-  #arrowBack {
-    display: none;
   }
 
   #Fonctionnement #Nav {
@@ -429,66 +534,6 @@ footer ol li i {
 html, body, #container {
   margin: 0;
   padding: 0;
-}
-
-#Fonctionnement {
-  margin: 0;
-  width: 100%;
-}
-#Fonctionnement h2 {
-  margin: 15px 35px 0 35px;
-}
-#Fonctionnement #Nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0 20px 0;
-  padding: 0;
-}
-#Fonctionnement #Nav .Cartouche {
-  display: flex;
-  height: 60px;
-  width: 75%;
-  align-items: center;
-  background-color: #f3f3f3;
-  margin: 10px 35px 10px 35px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
-  -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
-  box-shadow: 10px 10px 10px 0 #dfdfdf;
-}
-#Fonctionnement #Nav .Cartouche:hover {
-  background-color: #f2eafb;
-}
-#Fonctionnement #Nav .Cartouche:hover .cartouche-I {
-  color: #9356DC;
-}
-#Fonctionnement #Nav .Cartouche .Cartouche-Number {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #9356DC;
-  width: 30px;
-  height: 30px;
-  color: white;
-  margin: -1px -1px -1px -10px;
-  text-align: center;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-#Fonctionnement #Nav .Cartouche .Cartouche-Select {
-  display: flex;
-  margin-left: 25px;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-}
-#Fonctionnement #Nav .Cartouche .Cartouche-Select .cartouche-I {
-  margin-right: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

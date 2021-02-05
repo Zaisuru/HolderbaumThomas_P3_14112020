@@ -13,6 +13,10 @@
   border: none;
   cursor: pointer;
   @include border-radius(25px);
+  &:hover{
+    opacity: 0.9;
+    @include box-shadow(5px 1px 5px 1px $shadowColor);
+  }
 }
 
 #commande-Btn{
@@ -22,3 +26,4 @@
   width: 100%;
   height: 100%;
 }
+

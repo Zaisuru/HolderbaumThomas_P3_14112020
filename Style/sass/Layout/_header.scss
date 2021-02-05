@@ -30,6 +30,9 @@ header{
     padding: 15px;
     width: 40%;
   }
+  h1{
+    display: none;
+  }
 }
 #ville{
   background-color: $cityColor;

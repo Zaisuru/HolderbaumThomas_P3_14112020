@@ -1,13 +1,19 @@
 // Déclaration des pages
 @import "Utils/variables";
-@import "Layout/header";
 @import "Utils/mixin";
-@import "Components/btn";
-@import "Layout/menu";
+
+@import "Layout/header";
 @import "Layout/footer";
-@import "Layout/menuPage";
+
+
+@import "Components/btn";
 @import "Components/loadingSpinner";
-@import "Pages/responsive";
+
+@import "Pages/home";
+@import "Pages/restaurant";
+
+@import "Base/responsive";
+
 // Fonts
 @include googleFonts(Roboto);
 @include googleFonts(Shrikhand);
@@ -17,63 +23,3 @@ html, body, #container{
   margin: 0;
   padding: 0;
 }
-
-// Partie fonctionnement
-
-#Fonctionnement{
-  margin: 0;
-  width: 100%;
-  h2{
-    margin: 15px 35px 0 35px;
-  }
-  #Nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0 20px 0;
-    padding: 0;
-      .Cartouche{
-        display: flex;
-        height: 60px;
-        width: 75%;
-        align-items: center;
-        background-color: $fontColor;
-        margin: 10px 35px 10px 35px;
-        @include border-radius(15px);
-        @include box-shadow(10px 10px 10px 0 $shadowColor);
-        &:hover{
-          background-color: lighten($primaryColor, 35%);
-          .cartouche-I{
-            color: $primaryColor;
-          }
-        }
-      .Cartouche-Number{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $primaryColor;
-        width: 30px;
-        height: 30px;
-        color: white;
-        margin: -1px -1px -1px -10px;
-        text-align: center;
-        @include border-radius(50%);
-      }
-      .Cartouche-Select{
-        display: flex;
-        margin-left: 25px;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        font-size: 15px;
-        .cartouche-I{
-          margin-right: 25px;
-        }
-      }
-    }
-  }
-
-}
-
-
-

@@ -35,15 +35,7 @@
         }
 
       }
-      .fa-heart{
-        font-size: 25px;
-      }
-      .select{
-        background: -webkit-linear-gradient($primaryColor, $secondaryColor);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: none;
-      }
+
     }
     .listMenu{
       margin: 0 0 35px 0;
@@ -66,12 +58,19 @@
       margin: 15px 15px 15px 15px;
       display: flex;
       background-color: white;
+      justify-content: space-between;
       padding: 0;
+      position: relative;
       overflow: hidden;
+      //visibility: hidden;
       .ChoixMenu{
         padding: 15px;
         width: 75%;
         white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
         h3,p{
           margin: 0;
         }
@@ -84,16 +83,18 @@
       .cartoucheTarif{
         width: 15%;
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+        align-self: flex-end;
       }
       .select{
         background: $tertiaryColor;
         margin: 0;
-        display: flex;
-        align-items: center;
-        position: relative;
-        right: -150px;
+        right: 0;
+        top: 0;
+        width: 100px;
+        height: 100%;
+        transition-duration: .4s;
+        transform: translateX(360px);
+        position: absolute;
 
         .fa-check-circle{
           color: white;

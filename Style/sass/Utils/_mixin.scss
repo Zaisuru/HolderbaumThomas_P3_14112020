@@ -1,6 +1,5 @@
 //Scss pour la déclaration des mixin
 
-
 @mixin googleFonts($fonts){
   @import url('https://fonts.googleapis.com/css2?family=#{$fonts}');
 }
@@ -15,11 +14,4 @@
   -moz-box-shadow: $param;
   -webkit-box-shadow: ($param);
   box-shadow: $param;
-}
-
-@mixin fadein($time){
-  animation: $time;
-  -moz-animation: $time;
-  -webkit-animation: $time;
-  -o-animation: $time;
 }

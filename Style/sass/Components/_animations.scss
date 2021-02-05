@@ -15,26 +15,31 @@
   }
 }
 
+.fa-heart{
+  font-size: 25px;
+  color: #ececec;
+  text-shadow: black 1px 0, black -1px 0, black 0 1px, black 0 -1px;
+  -webkit-transition: background-color 1s ease-in, color ease-out 1s;
+  transition: background-color 1s ease-in, color ease-out 1s;
+  &:hover{
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(70%), to(#ff79da));
+    background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+  }
+}
 
 .card1{
   animation: transitionMenu ease-in-out 1s;
 }
 .card2{
-  animation: transitionMenu ease-in-out 1.5s;
+  transition-delay: 2s;
+  animation: transitionMenu ease-in-out 1s;
 }
 .card3{
-  animation: transitionMenu ease-in-out 2.5s;
-}
-
-@keyframes circleCheck {
-  
-}
-
-.fa-check-circle{
-  transition-duration: .5s;
-  transition-delay: 1s;
-}
-.select:hover .fa-check-circle
-{
-  transform: rotate(45deg);
+  transition-delay: 4s;
+  animation: transitionMenu ease-in-out 1s;
 }
