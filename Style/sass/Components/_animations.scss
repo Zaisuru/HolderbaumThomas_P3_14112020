@@ -1,6 +1,27 @@
 @import "../Utils/mixin";
 @import "../Utils/variables";
 
+
+//loading spinner
+@keyframes disparition {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes apparition {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+
 // apparition page menu 
 
 @keyframes transitionMenu {
@@ -16,17 +37,12 @@
 }
 
 .fa-heart{
-  font-size: 25px;
-  color: #ececec;
-  text-shadow: black 1px 0, black -1px 0, black 0 1px, black 0 -1px;
   -webkit-transition: background-color 1s ease-in, color ease-out 1s;
   transition: background-color 1s ease-in, color ease-out 1s;
   &:hover{
-    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(70%), to(#ff79da));
-    background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
-    background-clip: text;
+    background-image: -webkit-gradient(linear, right bottom, left top, from($primaryColor), color-stop(70%), to($secondaryColor));
+    background-image: linear-gradient(to top left, $primaryColor, 70%, $secondaryColor);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     color: transparent;
     text-shadow: none;
   }

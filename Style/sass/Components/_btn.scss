@@ -14,8 +14,8 @@
   cursor: pointer;
   @include border-radius(25px);
   &:hover{
-    opacity: 0.9;
-    @include box-shadow(5px 1px 5px 1px $shadowColor);
+    @include box-shadow(2px 2px 10px #666565);
+    background: linear-gradient(to top left, $primaryColor, 50% ,$secondaryColor);
   }
 }
 
