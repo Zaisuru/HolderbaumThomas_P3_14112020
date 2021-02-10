@@ -27,3 +27,8 @@
   height: 100%;
 }
 
+@media screen and (min-width: 1024px){
+  .btn{
+    max-width: 30%;
+  }
+}
