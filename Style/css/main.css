@@ -49,8 +49,12 @@ header {
 }
 
 #ville #ville-description {
-  margin-left: 15px;
+  margin: 15px;
+  width: 100px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
+  border: none;
+  background: none;
 }
 
 #Banner {
@@ -91,16 +95,22 @@ footer #footerLogo {
   font-size: 18px;
 }
 
-footer ol {
+footer ul {
   margin: 0;
+  list-style: none;
 }
 
-footer ol li {
-  list-style: none;
+footer ul li {
   padding: 3px;
 }
 
-footer ol li i {
+footer ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li a i {
   width: 20px;
   margin-right: 5px;
 }
@@ -373,12 +383,12 @@ footer ol li i {
   right: 15px;
 }
 
-#Menu .Restaurant a .new p {
-  padding: 5px 10px 5px 10px;
+#Menu .Restaurant a .new span {
+  padding: 15px 10px 15px 10px;
   margin: 0;
   color: #008766;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #Menu .Restaurant .RestaurantCard {
@@ -398,14 +408,13 @@ footer ol li i {
   padding: 10px;
 }
 
-#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre h3, #Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre p {
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre h3, #Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre h4 {
   margin: 0;
   padding: 0;
 }
 
-#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre p {
+#Menu .Restaurant .RestaurantCard .RestaurantCard-Body-Titre h4 {
   color: #656565;
-  font-size: 16px;
 }
 
 @keyframes disparition {
@@ -525,14 +534,28 @@ footer ol li i {
   animation-delay: 0.6s;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu {
+#MenuRestaurant #MenuRestaurant-Body .card4 {
+  animation: menu-deroulant 2s cubic-bezier(0, 0, 0, 1) forwards;
+  animation-delay: 0.8s;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu {
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border-radius: 15px 15px 15px 15px;
   border-radius: 15px 15px 15px 15px;
   -moz-box-shadow: 10px 10px 10px 0 #dfdfdf;
   -webkit-box-shadow: 10px 10px 10px 0 #dfdfdf;
   box-shadow: 10px 10px 10px 0 #dfdfdf;
-  margin: 10px 15px 10px 15px;
+  margin: 10px 5px 10px 5px;
   display: flex;
   background-color: white;
   justify-content: space-between;
@@ -544,7 +567,7 @@ footer ol li i {
   text-overflow: ellipsis;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu .cartouchemenu_legend {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_legend {
   padding: 15px;
   min-width: 250px;
   max-width: 250px;
@@ -555,17 +578,17 @@ footer ol li i {
   justify-content: space-between;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu .cartouchemenu_legend h3, #MenuRestaurant #MenuRestaurant-Body .cartouchemenu .cartouchemenu_legend p {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_legend h3, #MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_legend p {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu .cartouchemenu_legend p {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_legend p {
   color: #656565;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu .cartouchemenu_legend--prix {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_legend--prix {
   min-width: 50px;
   max-width: 50px;
   display: flex;
@@ -573,7 +596,11 @@ footer ol li i {
   position: relative;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu .cartouchemenu_validation {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_legend--prix b {
+  margin-bottom: 15px;
+}
+
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_validation {
   background: #99E2D0;
   min-width: 50px;
   max-width: 50px;
@@ -582,18 +609,18 @@ footer ol li i {
   align-items: center;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu .cartouchemenu_validation .fa-check-circle {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu .cartouchemenu_validation .fa-check-circle {
   color: white;
   font-size: 20px;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu:hover .cartouchemenu_legend {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu:hover .cartouchemenu_legend {
   min-width: 180px;
   max-width: 180px;
   transition-duration: 0.9s;
 }
 
-#MenuRestaurant #MenuRestaurant-Body .cartouchemenu:hover .fa-check-circle {
+#MenuRestaurant #MenuRestaurant-Body .menu .cartouchemenu:hover .fa-check-circle {
   transform: rotate(360deg);
   transition-delay: 0.2s;
   transition-duration: 0.5s;

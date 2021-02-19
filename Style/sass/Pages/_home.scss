@@ -95,12 +95,12 @@
           background-color: #99e2d0;
           top: -270px;
           right: 15px;
-          p{
-            padding: 5px 10px 5px 10px;
+          span{
+            padding: 15px 10px 15px 10px;
             margin: 0;
             color: #008766;
             font-family: "Roboto", sans-serif;
-            font-size: 15px;
+            font-size: 18px;
           }
         }
       }
@@ -118,13 +118,12 @@
       .RestaurantCard-Body-Titre{
         margin: 0;
         padding: 10px;
-        h3,p{
+        h3,h4{
           margin: 0;
           padding: 0;
         }
-        p{
+        h4{
           color: $silverColor;
-          font-size: 16px;
         }
       }
     }
